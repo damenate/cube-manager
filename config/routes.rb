@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cubes
   namespace :admin do
     resources :cards
 resources :cubes
