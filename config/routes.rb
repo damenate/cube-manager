@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :cards
-resources :cubes
 
     root to: "cards#index"
   end
