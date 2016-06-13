@@ -69,6 +69,6 @@ class CubesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cube_params
-      params.require(:cube).permit(:name)
+      params.require(:cube).permit(:name, :card_id)
     end
 end

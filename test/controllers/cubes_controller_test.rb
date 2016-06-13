@@ -18,7 +18,7 @@ class CubesControllerTest < ActionController::TestCase
 
   test "should create cube" do
     assert_difference('Cube.count') do
-      post :create, cube: { name: @cube.name }
+      post :create, cube: { card_id: @cube.card_id, name: @cube.name }
     end
 
     assert_redirected_to cube_path(assigns(:cube))
@@ -35,7 +35,7 @@ class CubesControllerTest < ActionController::TestCase
   end
 
   test "should update cube" do
-    patch :update, id: @cube, cube: { name: @cube.name }
+    patch :update, id: @cube, cube: { card_id: @cube.card_id, name: @cube.name }
     assert_redirected_to cube_path(assigns(:cube))
   end
 

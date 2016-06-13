@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  card_id: 1
 
 two:
   name: MyString
+  card_id: 1
